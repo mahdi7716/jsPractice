@@ -13,18 +13,16 @@
 
     <div class="login-page">
         <div class="form">
-                <input type="text" placeholder="username" class="username" />
-                
-                <input type="password" placeholder="password" class="password" />
-                
-                <button onclick="dataValidation()">login</button>
+                <input type="text" placeholder="username" class="username" onkeypress="usernameValidation()"/>
+                <span class="username-validation">Must By 12 Character(min)</span>
+                <input type="password" placeholder="password" class="password" onkeypress="passwordValidation()"/>
+                <span class="password-validation">Must By 8 Character(min)</span>
+                <button>login</button>
                 <p class="message">Not registered? <a>Create an account</a></p>
         </div>
     </div>
 
-    <div class="modal">
-        لطفا اطلاعات لازم را به درستی وارد کنید
-    </div>
+    
 
     <script src="Script.js"></script>
 
